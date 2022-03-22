@@ -1,7 +1,15 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const path = require('path')
 
 const app = express()
+
+
+
+mongoose.connect()
+
+
+
 
 //definindo o template engine
 app.set('view engine', 'ejs')
