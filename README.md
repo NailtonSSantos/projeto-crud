@@ -6,3 +6,4 @@ Instalações:
 npm install nodemon --save-dev
 npm install express
 npm install mongoose
+npm install bcrypt
