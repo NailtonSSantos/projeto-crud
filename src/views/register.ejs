@@ -9,6 +9,11 @@
 
     <%- include('partials/navbar.ejs') %> 
 
+    <% if (typeof message !== 'undefined') { %>
+        <%= message %> 
+    <% } %> 
+
+
     <form action="/register/add" method="post">
         <div>
             <label>Nome:</label>
