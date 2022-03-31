@@ -1,10 +1,10 @@
-const bcrypt = require('bcrypt')
+const bcryptjs = require('bcryptjs')
 
 async function crypto(pwd){
 
-    const salt = await bcrypt.genSalt()
+    const salt = await bcryptjs.genSalt()
 
-    const password = await bcrypt.hash(pwd, salt)
+    const password = await bcryptjs.hash(pwd, salt)
     
     return password
 }
